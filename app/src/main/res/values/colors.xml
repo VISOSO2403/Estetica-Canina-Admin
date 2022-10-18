@@ -11,4 +11,6 @@
     <!-- Colores personalizados-->
 
     <color name="fondo">#EDE7F6</color>
+    <color name="whiterect">#F9FAFB</color>
+    <color name="morado">#6B0BAB</color>
 </resources>
