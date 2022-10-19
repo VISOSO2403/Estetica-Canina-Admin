@@ -16,15 +16,15 @@
 
         <ImageView
             android:id="@+id/imglogo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/logo_nobackground" />
+            android:background="@drawable/logo_whitebackground" />
 
         <LinearLayout
             android:id="@+id/contenedor2"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/contenedor"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
@@ -38,6 +38,7 @@
                 android:id="@+id/contenedor3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:textAlignment="center">
 
@@ -55,6 +56,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="55dp"
                     android:background="@drawable/stylo_border_right"
+                    app:backgroundTint="@color/morado"
                     android:text="Registrarse" />
 
             </LinearLayout>
@@ -68,70 +70,99 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <com.google.android.material.textfield.TextInputLayout
+                <TextView
+                    android:id="@+id/txtregistrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="¡Registrate aquí!"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtnombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Nombre"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <EditText
                     android:id="@+id/etxtnombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nombre"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    android:layout_margin="5dp"
+                    android:textColor="@color/morado"
+                    android:background="@drawable/stylo_border_edittex"
+                    android:hint="Igresa tu nombre "/>
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/tilapellido"
+                <TextView
+                    android:id="@+id/txtapellido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Apellido"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Apellido"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etxtapellido"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/etxtcorreo"
+                <EditText
+                    android:id="@+id/etxtapellido"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Correo"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    android:layout_margin="5dp"
+                    android:textColor="@color/morado"
+                    android:background="@drawable/stylo_border_edittex"
+                    android:hint="Ingresa tu apellido " />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/etxtcontrasena"
+                <TextView
+                    android:id="@+id/txtemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Contraseña"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPassword"
-                        />
+                <EditText
+                    android:id="@+id/etxtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/morado"
+                    android:background="@drawable/stylo_border_edittex"
+                    android:hint="correo@correo.com"/>
 
-                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:id="@+id/txtpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Contraseña"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/etxtpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/morado"
+                    android:background="@drawable/stylo_border_edittex"
+                    android:layout_below="@+id/textcor" />
 
                 <Button
                     android:id="@+id/btnregistrarse"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/stylo_border_rect"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:backgroundTint="@color/morado"
+                    app:cornerRadius="24dp"
                     android:text="Registrarse" />
 
             </LinearLayout>
