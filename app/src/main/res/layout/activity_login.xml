@@ -24,7 +24,7 @@
         <LinearLayout
             android:id="@+id/contenedor2"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="400dp"
             android:layout_below="@+id/contenedor"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
@@ -102,9 +102,10 @@
                 <Button
                     android:id="@+id/btningresar"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_marginTop="30dp"
-                    android:background="@drawable/stylo_border_rect"
+                    android:backgroundTint="@color/morado"
+                    app:cornerRadius="24dp"
                     android:text="Ingresar" />
 
             </LinearLayout>
