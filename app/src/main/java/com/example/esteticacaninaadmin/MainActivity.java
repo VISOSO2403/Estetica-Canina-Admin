@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 5000;
+    private static int SPLASH_SCREEN = 3000;
 
     //VARIABLES
     Animation topAnim, buttonAnim;
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(MainActivity.this, MenuActivity.class);
+                Intent i = new Intent(MainActivity.this, SiginActivity.class);
                 startActivity(i);
                 finish();
             }
