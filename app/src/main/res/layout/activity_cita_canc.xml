@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo"
-    tools:context=".InicioFragment">
+    tools:context=".CitaCancActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@id/scrollView"
-        android:padding="5dp">
+        android:padding="16dp">
 
         <LinearLayout
             android:id="@+id/contenedor"
@@ -54,30 +53,32 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="3"
-                            android:background="@drawable/stylo_border_left"
                             android:text="Pendientes"
-                            app:backgroundTint="@color/morado"
+                            android:background="@drawable/stylo_border_left"
+                            android:textColor="@color/black"
+                            app:backgroundTint="@color/fondo"
                             android:textAllCaps="false"
                             android:textSize="12dp"/>
 
                         <Button
+                            android:id="@+id/btnCitaConf"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="3"
+                            android:background="@color/morado"
                             android:text="Confirmadas"
-                            android:textColor="#130000"
-                            app:backgroundTint="#DFDEDE"
-                            android:background="@color/fondo"
+                            app:backgroundTint="@color/fondo"
+                            android:textColor="@color/black"
                             android:textAllCaps="false"
-                            android:textSize="12dp"/>
+                            android:textSize="12dp" />
                         <Button
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="3"
                             android:text="Canceladas"
                             android:id="@+id/btnCitaCanc"
-                            android:textColor="#130000"
-                            app:backgroundTint="#DFDEDE"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@color/morado"
                             android:textAllCaps="false"
                             android:textSize="12dp"
                             android:background="@drawable/stylo_border_right"/>
@@ -110,4 +111,5 @@
 
     </ScrollView>
 
-</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

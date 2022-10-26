@@ -43,20 +43,14 @@
 
                 <Button
                     android:id="@+id/btniniciar"
-                    android:layout_width="142dp"
-                    android:layout_height="55dp"
-                    android:background="@drawable/stylo_border_left"
-                    android:text="Iniciar"
-                    app:backgroundTint="@color/morado" />
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/morado"
+                    android:layout_marginHorizontal="20dp"
+                    app:cornerRadius="12dp"
+                    android:text="Iniciar Sesión"/>
 
-                <Button
-                    android:id="@+id/btnregistrar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:background="@drawable/stylo_border_right"
-                    android:text="Registrarse"
-                    android:textColor="#130000"
-                    app:backgroundTint="#DFDEDE" />
+
 
             </LinearLayout>
 
