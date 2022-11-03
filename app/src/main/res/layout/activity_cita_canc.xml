@@ -50,7 +50,7 @@
                         android:textAlignment="center">
 
                         <Button
-                            android:id="@+id/btnCitaPend"
+                            android:id="@+id/btncitapend"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="3"
@@ -62,7 +62,7 @@
                             android:textSize="12dp"/>
 
                         <Button
-                            android:id="@+id/btnCitaConf"
+                            android:id="@+id/btncitaconf"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="3"
@@ -72,12 +72,13 @@
                             android:textColor="@color/black"
                             android:textAllCaps="false"
                             android:textSize="12dp" />
+
                         <Button
+                            android:id="@+id/btncitacanc"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="3"
                             android:text="Canceladas"
-                            android:id="@+id/btnCitaCanc"
                             android:textColor="@color/white"
                             app:backgroundTint="@color/morado"
                             android:textAllCaps="false"
