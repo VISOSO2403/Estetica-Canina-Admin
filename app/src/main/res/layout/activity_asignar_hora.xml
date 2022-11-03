@@ -49,10 +49,10 @@
                         android:gravity="right">
 
                         <Button
+                            android:id="@+id/btncanc"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:text="x"
-                            android:id="@+id/btnCitaCanc"
                             android:textColor="@color/white"
                             app:backgroundTint="@color/morado"
                             android:textAllCaps="false"
@@ -62,7 +62,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/No_cta"
+                        android:id="@+id/no_cta"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/estado"
@@ -87,40 +87,40 @@
                             android:layout_marginVertical="10dp">
 
                             <TextView
-                                android:id="@+id/txtNomUsr"
+                                android:id="@+id/txtnomusr"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Nombre del usuario:" />
 
                             <TextView
-                                android:id="@+id/txtNomMas"
+                                android:id="@+id/txtnommasc"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/txtNomUsr"
+                                android:layout_below="@+id/txtnomusr"
                                 android:layout_marginTop="10dp"
                                 android:text="Nombre de la mascota:" />
 
                             <TextView
-                                android:id="@+id/txtNumTel"
+                                android:id="@+id/txtnumtel"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/txtNomMas"
+                                android:layout_below="@+id/txtnommasc"
                                 android:layout_marginTop="10dp"
                                 android:text="Numero de telefono:" />
 
                             <TextView
-                                android:id="@+id/txtSer"
+                                android:id="@+id/txtserv"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/txtNumTel"
+                                android:layout_below="@+id/txtnumtel"
                                 android:layout_marginTop="10dp"
                                 android:text="Servicio:" />
 
                             <TextView
-                                android:id="@+id/txtAni"
+                                android:id="@+id/txtanimal"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/txtSer"
+                                android:layout_below="@+id/txtserv"
                                 android:layout_marginTop="10dp"
                                 android:text="Animal:" />
 
@@ -128,7 +128,7 @@
                                 android:id="@+id/txtFech"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@+id/txtAni"
+                                android:layout_below="@+id/txtanimal"
                                 android:layout_marginTop="10dp"
                                 android:text="Fecha:" />
 
@@ -146,7 +146,7 @@
                         android:layout_marginVertical="25dp">
 
                         <EditText
-                            android:id="@+id/EdtTxOpc1"
+                            android:id="@+id/edtxtopc1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/stylo_border_edittex"
@@ -156,8 +156,8 @@
                             android:textAlignment="center"/>
 
                         <EditText
-                            android:id="@+id/EdtTxOpc2"
-                            android:layout_below="@+id/EdtTxOpc1"
+                            android:id="@+id/edtxtopc2"
+                            android:layout_below="@+id/edtxtopc1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="25dp"
@@ -168,8 +168,8 @@
                             android:textAlignment="center"/>
 
                         <EditText
-                            android:id="@+id/EdtTxOpc3"
-                            android:layout_below="@+id/EdtTxOpc2"
+                            android:id="@+id/edtxtopc3"
+                            android:layout_below="@+id/edtxtopc2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="25dp"
@@ -180,9 +180,10 @@
                             android:textAlignment="center"/>
 
                         <Button
+                            android:id="@+id/btnenv"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_below="@id/EdtTxOpc3"
+                            android:layout_below="@id/edtxtopc3"
                             android:layout_marginVertical="25dp"
                             android:backgroundTint="@color/morado"
                             app:cornerRadius="24dp"
