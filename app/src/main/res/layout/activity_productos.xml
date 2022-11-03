@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".ProductosActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/scrollView"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/contenedor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:text="" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                style="@style/AppTheme.CardView"
+                android:layout_below="@+id/title"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:id="@+id/contenedor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contenedor"
+                    android:background="@drawable/stylo_border_rect"
+                    android:backgroundTint="@color/whiterect"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/contenedor3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="20dp"
+                        android:gravity="center"
+                        android:textAlignment="center">
+
+                        <Button
+                            android:id="@+id/btnservicios"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:background="@drawable/stylo_border_left"
+                            android:text="Servicios"
+                            android:textAllCaps="false"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            app:backgroundTint="@color/fondo" />
+
+                        <Button
+                            android:id="@+id/btnproductos"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:background="@drawable/stylo_border_right"
+                            android:text="Productos"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            app:backgroundTint="@color/morado" />
+
+                        <Button
+                            android:id="@+id/btnagregar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_weight="3"
+                            android:text="+"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:backgroundTint="@color/morado"
+                            app:cornerRadius="12dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/esquinas_redondeadas"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical"
+                        android:layout_marginVertical="15dp"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:id="@+id/txtnomprod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Producto 1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/fondo"
+                            android:orientation="horizontal"
+                            android:padding="6dp">
+
+                            <TextView
+                                android:id="@+id/txtdescserv"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:padding="4dp"
+                                android:text="Lorem ipsum dolor sit amet. Est alias recusandae vel omnis nihil qui vitae delectus ut accusamus ratione. "
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                android:padding="6dp">
+
+                                <Button
+                                    android:id="@+id/btneditar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@color/morado"
+                                    app:cornerRadius="12dp"
+                                    android:text="editar"
+                                    android:textColor="@color/white"
+                                    android:textSize="12dp" />
+                                <Button
+                                    android:id="@+id/btnborrar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="?attr/materialButtonOutlinedStyle"
+                                    app:strokeColor="@color/morado"
+                                    app:cornerRadius="12dp"
+                                    android:elevation="50dp"
+                                    android:text="borrar"
+                                    android:textColor="@color/morado"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</ScrollView>
