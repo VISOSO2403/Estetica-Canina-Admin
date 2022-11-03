@@ -10,7 +10,7 @@
 
     <!-- Colores personalizados-->
 
-    <color name="fondo">#EDE7F6</color>
+    <color name="fondo">#E5E7EB</color>
     <color name="whiterect">#F9FAFB</color>
     <color name="morado">#6B0BAB</color>
 </resources>

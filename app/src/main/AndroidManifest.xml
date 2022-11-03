@@ -13,6 +13,20 @@
         android:theme="@style/Theme.EsteticaCaninaAdmin"
         tools:targetApi="31">
         <activity
+            android:name=".ProductosActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ServiciosActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AsignarHoraActivity"
             android:exported="false">
             <meta-data
