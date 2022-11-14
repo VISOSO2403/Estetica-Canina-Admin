@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@id/scrollView"
-        android:padding="16dp">
+        android:padding="8dp">
 
         <LinearLayout
             android:id="@+id/contenedor"
@@ -46,7 +46,7 @@
                         android:id="@+id/contenedor3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="5dp"
                         android:layout_marginVertical="20dp"
                         android:gravity="center"
                         android:textAlignment="center">
@@ -58,8 +58,7 @@
                             android:layout_weight="10"
                             android:background="@drawable/stylo_border_left"
                             android:text="Servicios"
-                            android:textAllCaps="false"
-                            android:textSize="18dp"
+                            android:textSize="13dp"
                             android:textColor="@color/black"
                             app:backgroundTint="@color/fondo" />
 
@@ -70,9 +69,8 @@
                             android:layout_weight="10"
                             android:background="@drawable/stylo_border_right"
                             android:text="Productos"
-                            android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="18dp"
+                            android:textSize="13dp"
                             app:backgroundTint="@color/morado" />
 
                         <Button
@@ -101,24 +99,23 @@
                         android:padding="6dp">
 
                         <TextView
-                            android:id="@+id/txtnomprod"
+                            android:id="@+id/txtnomserv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="Producto 1"
+                            android:text="Servicio 1"
                             android:textColor="@color/black"
                             android:textSize="18dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/fondo"
                             android:orientation="horizontal"
                             android:padding="6dp">
 
                             <TextView
                                 android:id="@+id/txtdescserv"
-                                android:layout_width="200dp"
+                                android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:padding="4dp"
@@ -154,9 +151,6 @@
                                     android:textSize="12dp" />
                             </LinearLayout>
                         </LinearLayout>
-
-
-
 
                     </LinearLayout>
 

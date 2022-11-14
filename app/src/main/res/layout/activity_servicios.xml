@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@id/scrollView"
-        android:padding="16dp">
+        android:padding="8dp">
 
         <LinearLayout
             android:id="@+id/contenedor"
@@ -46,7 +46,7 @@
                         android:id="@+id/contenedor3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="5dp"
                         android:layout_marginVertical="20dp"
                         android:gravity="center"
                         android:textAlignment="center">
@@ -58,8 +58,7 @@
                             android:layout_weight="10"
                             android:background="@drawable/stylo_border_left"
                             android:text="Servicios"
-                            android:textAllCaps="false"
-                            android:textSize="18dp"
+                            android:textSize="13dp"
                             android:textColor="@color/white"
                             app:backgroundTint="@color/morado" />
 
@@ -70,9 +69,8 @@
                             android:layout_weight="10"
                             android:background="@drawable/stylo_border_right"
                             android:text="Productos"
-                            android:textAllCaps="false"
                             android:textColor="@color/black"
-                            android:textSize="18dp"
+                            android:textSize="13dp"
                             app:backgroundTint="@color/fondo" />
 
                         <Button
@@ -112,13 +110,12 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/fondo"
                             android:orientation="horizontal"
                             android:padding="6dp">
 
                             <TextView
                                 android:id="@+id/txtdescserv"
-                                android:layout_width="200dp"
+                                android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:padding="4dp"
