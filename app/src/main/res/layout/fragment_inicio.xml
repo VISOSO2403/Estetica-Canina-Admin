@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@id/scrollView"
-        android:padding="16dp">
+        android:padding="8dp">
 
         <LinearLayout
             android:id="@+id/contenedor"
@@ -58,7 +58,7 @@
                             android:text="Pendientes"
                             app:backgroundTint="@color/morado"
                             android:textAllCaps="false"
-                            android:textSize="12dp"/>
+                            android:textSize="10dp"/>
 
                         <Button
                             android:id="@+id/btncitaconf"
@@ -70,7 +70,7 @@
                             app:backgroundTint="#DFDEDE"
                             android:background="@color/fondo"
                             android:textAllCaps="false"
-                            android:textSize="12dp"/>
+                            android:textSize="10dp"/>
 
                         <Button
                             android:id="@+id/btncitacanc"
@@ -81,7 +81,7 @@
                             android:textColor="#130000"
                             app:backgroundTint="#DFDEDE"
                             android:textAllCaps="false"
-                            android:textSize="12dp"
+                            android:textSize="10dp"
                             android:background="@drawable/stylo_border_right"/>
 
                     </LinearLayout>

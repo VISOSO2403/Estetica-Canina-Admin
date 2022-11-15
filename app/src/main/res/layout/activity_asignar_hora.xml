@@ -125,7 +125,7 @@
                                 android:text="Animal:" />
 
                             <TextView
-                                android:id="@+id/txtFech"
+                                android:id="@+id/txtfech"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/txtanimal"
@@ -146,7 +146,7 @@
                         android:layout_marginVertical="25dp">
 
                         <EditText
-                            android:id="@+id/edtxtopc1"
+                            android:id="@+id/etxtopc1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/stylo_border_edittex"
@@ -156,8 +156,8 @@
                             android:textAlignment="center"/>
 
                         <EditText
-                            android:id="@+id/edtxtopc2"
-                            android:layout_below="@+id/edtxtopc1"
+                            android:id="@+id/etxtopc2"
+                            android:layout_below="@+id/etxtopc1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="25dp"
@@ -168,8 +168,8 @@
                             android:textAlignment="center"/>
 
                         <EditText
-                            android:id="@+id/edtxtopc3"
-                            android:layout_below="@+id/edtxtopc2"
+                            android:id="@+id/etxtopc3"
+                            android:layout_below="@+id/etxtopc2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="25dp"
@@ -183,7 +183,7 @@
                             android:id="@+id/btnenv"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_below="@id/edtxtopc3"
+                            android:layout_below="@id/etxtopc3"
                             android:layout_marginVertical="25dp"
                             android:backgroundTint="@color/morado"
                             app:cornerRadius="24dp"

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/fondo"
-    tools:context=".ServiciosActivity">
+    tools:context=".ServiciosFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@id/scrollView"
-        android:padding="16dp">
+        android:padding="8dp">
 
         <LinearLayout
             android:id="@+id/contenedor"
@@ -46,40 +47,28 @@
                         android:id="@+id/contenedor3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="10dp"
-                        android:layout_marginVertical="20dp"
                         android:gravity="center"
+                        android:background="@color/fondo"
+                        android:layout_marginHorizontal="10dp"
                         android:textAlignment="center">
 
-                        <Button
+
+                        <TextView
                             android:id="@+id/btnservicios"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
-                            android:background="@drawable/stylo_border_left"
+                            android:gravity="center"
                             android:text="Servicios"
                             android:textAllCaps="false"
-                            android:textSize="18dp"
-                            android:textColor="@color/white"
-                            app:backgroundTint="@color/morado" />
-
-                        <Button
-                            android:id="@+id/btnproductos"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="10"
-                            android:background="@drawable/stylo_border_right"
-                            android:text="Productos"
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textSize="18dp"
-                            app:backgroundTint="@color/fondo" />
+                            android:textColor="@color/morado"
+                            android:textSize="25dp" />
 
                         <Button
                             android:id="@+id/btnagregar"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginHorizontal="5dp"
                             android:layout_weight="3"
                             android:text="+"
                             android:textAllCaps="false"
@@ -118,7 +107,7 @@
 
                             <TextView
                                 android:id="@+id/txtdescserv"
-                                android:layout_width="200dp"
+                                android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:padding="4dp"
@@ -168,4 +157,4 @@
 
     </ScrollView>
 
-</ScrollView>
+</RelativeLayout>

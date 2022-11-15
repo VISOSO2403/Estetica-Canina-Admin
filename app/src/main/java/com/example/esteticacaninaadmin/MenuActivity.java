@@ -14,7 +14,7 @@ public class MenuActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
 
     InicioFragment inicioFragment = new InicioFragment();
-    MensajesFragment mensajesFragment = new MensajesFragment();
+    ServiciosFragment mensajesFragment = new ServiciosFragment();
     AgendaFragment agendaFragment = new AgendaFragment();
     PerfilFragment perfilFragment = new PerfilFragment();
 
