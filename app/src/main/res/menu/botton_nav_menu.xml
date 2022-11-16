@@ -6,7 +6,7 @@
         android:icon="@drawable/home_icon" />
 
     <item android:id="@+id/mensaje"
-        android:title="Mensaje"
+        android:title="Servicios"
         android:icon="@drawable/email_icon" />
 
     <item android:id="@+id/agenda"

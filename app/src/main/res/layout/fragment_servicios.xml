@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/fondo"
-    tools:context=".ServiciosActivity">
+    tools:context=".ServiciosFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -51,27 +51,17 @@
                         android:gravity="center"
                         android:textAlignment="center">
 
-                        <Button
-                            android:id="@+id/btnservicios"
+                        <TextView
+                            android:id="@+id/txtservicios"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="10"
-                            android:background="@drawable/stylo_border_left"
                             android:text="Servicios"
-                            android:textSize="13dp"
-                            android:textColor="@color/white"
-                            app:backgroundTint="@color/morado" />
-
-                        <Button
-                            android:id="@+id/btnproductos"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="10"
-                            android:background="@drawable/stylo_border_right"
-                            android:text="Productos"
-                            android:textColor="@color/black"
-                            android:textSize="13dp"
+                            android:textSize="25dp"
+                            android:textColor="@color/morado"
+                            android:gravity="center"
                             app:backgroundTint="@color/fondo" />
+
 
                         <Button
                             android:id="@+id/btnagregar"
@@ -152,9 +142,6 @@
                             </LinearLayout>
                         </LinearLayout>
 
-
-
-
                     </LinearLayout>
 
 
@@ -165,4 +152,4 @@
 
     </ScrollView>
 
-</ScrollView>
+</RelativeLayout>
