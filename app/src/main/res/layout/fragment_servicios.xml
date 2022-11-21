@@ -7,7 +7,7 @@
     android:background="@color/fondo"
     tools:context=".ServiciosFragment">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@id/scrollView"
@@ -88,60 +88,10 @@
                         android:layout_marginVertical="15dp"
                         android:padding="6dp">
 
-                        <TextView
-                            android:id="@+id/txtnomserv"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Servicio 1"
-                            android:textColor="@color/black"
-                            android:textSize="18dp"/>
-
-                        <LinearLayout
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewSingle"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:padding="6dp">
-
-                            <TextView
-                                android:id="@+id/txtdescserv"
-                                android:layout_width="150dp"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:padding="4dp"
-                                android:text="Lorem ipsum dolor sit amet. Est alias recusandae vel omnis nihil qui vitae delectus ut accusamus ratione. "
-                                />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_gravity="center"
-                                android:padding="6dp">
-
-                                <Button
-                                    android:id="@+id/btneditar"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:backgroundTint="@color/morado"
-                                    app:cornerRadius="12dp"
-                                    android:text="editar"
-                                    android:textColor="@color/white"
-                                    android:textSize="12dp" />
-                                <Button
-                                    android:id="@+id/btnborrar"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    style="?attr/materialButtonOutlinedStyle"
-                                    app:strokeColor="@color/morado"
-                                    app:cornerRadius="12dp"
-                                    android:elevation="50dp"
-                                    android:text="borrar"
-                                    android:textColor="@color/morado"
-                                    android:textSize="12dp" />
-                            </LinearLayout>
-                        </LinearLayout>
-
+                            android:layout_height="wrap_content"/>
                     </LinearLayout>
 
 
@@ -150,6 +100,6 @@
 
         </LinearLayout>
 
-    </ScrollView>
+    </LinearLayout>
 
 </RelativeLayout>

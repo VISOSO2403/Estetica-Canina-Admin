@@ -33,11 +33,11 @@ public class ProductosActivity extends AppCompatActivity implements View.OnClick
                 finish();
                 break;
 
-            case R.id.btnservicios:
+            /*case R.id.btnservicios:
                 i = new Intent(ProductosActivity.this, ServiciosActivity.class);
                 startActivity(i);
                 finish();
-                break;
+                break;*/
 
         }
     }
