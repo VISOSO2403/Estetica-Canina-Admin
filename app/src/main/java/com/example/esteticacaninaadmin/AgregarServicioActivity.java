@@ -21,7 +21,7 @@ import java.util.Map;
 
 public class AgregarServicioActivity extends AppCompatActivity {
 
-    Button btnagregar;
+    Button btnagregar, btncancelar;
     EditText nombre, descripcion, precio;
     private FirebaseFirestore mfirestore;
 
@@ -33,6 +33,7 @@ public class AgregarServicioActivity extends AppCompatActivity {
         mfirestore = FirebaseFirestore.getInstance();
 
         btnagregar = (Button) findViewById(R.id.btnagregar);
+        btncancelar = (Button)findViewById(R.id.btncancelar);
         nombre = (EditText) findViewById(R.id.etxtnom);
         descripcion = (EditText) findViewById(R.id.etxtdesc);
         precio= (EditText) findViewById(R.id.etxtcosto);
@@ -79,6 +80,14 @@ public class AgregarServicioActivity extends AppCompatActivity {
                 }
             });
         }
+
+        btncancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AgregarServicioActivity.this,MenuActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void updateServicio(String nservicio, String dservicio, String pservicio, String id) {
