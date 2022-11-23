@@ -26,10 +26,14 @@ public class registerActivity extends AppCompatActivity {
     private EditText nombre, apellido, email, contraseña;
     private Button registrar;
 
+
+
     private String admin;
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
 
+
+    
     private String nom = "";
     private String apell = "";
     private String mail = "";
