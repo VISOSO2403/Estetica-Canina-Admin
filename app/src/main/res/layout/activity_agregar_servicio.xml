@@ -123,15 +123,39 @@
                                 android:textColor="@color/black"
                                 android:textSize="18dp" />
 
-                            <Button
-                                android:id="@+id/btnselectimagen"
+                            <ImageView
+                                android:id="@+id/imgservicio"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:backgroundTint="@color/morado"
-                                android:text="Seleccionar archivo"
-                                app:cornerRadius="12dp" />
+                                android:layout_gravity="center" />
+
+                            <LinearLayout
+                                android:id="@+id/contenedor5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <Button
+                                    android:id="@+id/btnselectimagen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:backgroundTint="@color/morado"
+                                    android:text="Seleccionar archivo"
+                                    app:cornerRadius="12dp" />
+                                <Button
+                                    android:id="@+id/btneliminarimg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    style="?attr/materialButtonOutlinedStyle"
+                                    app:strokeColor="@color/morado"
+                                    app:cornerRadius="24dp"
+                                    android:textColor="@color/morado"
+                                    android:text="Eliminar" />
+
+                            </LinearLayout>
+
 
                         </LinearLayout>
 
