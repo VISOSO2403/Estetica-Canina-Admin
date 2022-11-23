@@ -20,13 +20,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".AgregarProductoActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".AgregarServicioActivity"
             android:exported="false">
             <meta-data
