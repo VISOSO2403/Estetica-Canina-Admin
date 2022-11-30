@@ -30,10 +30,6 @@ public class registerActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
 
-    private String nom = "";
-    private String apell = "";
-    private String mail = "";
-    private String contra = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,15 +42,15 @@ public class registerActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
+        admin = mAuth.getCurrentUser().getUid();
 
         registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nom = nombre.getText().toString();
-                apell = apellido.getText().toString();
-                mail = email.getText().toString();
-                contra = contraseña.getText().toString();
-
+                 String nom = nombre.getText().toString();
+                 String apell = apellido.getText().toString();
+                 String mail = email.getText().toString();
+                 String contra = contraseña.getText().toString();
                 if (!nom.isEmpty() && !apell.isEmpty() && !mail.isEmpty() && !contra.isEmpty()){
                     if (contra.length() >= 6){
                         agregarAdmin();
@@ -67,18 +63,26 @@ public class registerActivity extends AppCompatActivity {
             }
 
             private void agregarAdmin() {
+                String nom = nombre.getText().toString();
+                String apell = apellido.getText().toString();
+                String mail = email.getText().toString();
+                String contra = contraseña.getText().toString();
+
                 mAuth.createUserWithEmailAndPassword(mail, contra).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            admin = mAuth.getCurrentUser().getUid();
-                            DocumentReference dbReference = db.collection("Admins").document(admin);
 
+                            DocumentReference dbReference = db.collection("Admins").document(admin);
+                            admin = mAuth.getCurrentUser().getUid();
                             Map<String, Object> admin = new HashMap<>();
                             admin.put("Nombre", nom);
                             admin.put("Correo", mail);
                             admin.put("Apellido", apell);
                             admin.put("Contraseña", contra);
+                            admin.put("Rol", "admin");
+                            admin.put("ID", admin);
+
 
                             dbReference.set(admin).addOnCompleteListener(new OnCompleteListener<Void>() {
 
