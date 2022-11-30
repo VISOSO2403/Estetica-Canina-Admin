@@ -31,7 +31,7 @@
                 android:id="@+id/card"
                 style="@style/AppTheme.CardView"
                 android:layout_below="@+id/title"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="24dp">
 
                 <LinearLayout
                     android:id="@+id/contenedor2"
@@ -39,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/contenedor"
                     android:background="@drawable/stylo_border_rect"
-                    android:backgroundTint="@color/whiterect"
+                    android:backgroundTint="@color/white"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -47,7 +47,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="5dp"
-                        android:layout_marginVertical="20dp"
+                        android:layout_marginVertical="10dp"
                         android:gravity="center"
                         android:textAlignment="center">
 
@@ -82,10 +82,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/esquinas_redondeadas"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="5dp"
                         android:orientation="vertical"
-                        android:layout_marginVertical="15dp"
+                        android:layout_marginVertical="10dp"
                         android:padding="6dp">
 
                         <androidx.recyclerview.widget.RecyclerView

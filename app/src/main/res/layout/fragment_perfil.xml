@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".PerfilFragment">
+    tools:context=".PerfilFragment"
+    android:background="@color/fondo">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="16dp">
+        android:paddingHorizontal="8dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -18,13 +19,13 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
+                style="@style/AppTheme.CardView"
+                app:cardCornerRadius="24dp"
+                android:layout_marginVertical="20dp">
 
                 <RelativeLayout
                     android:id="@+id/linearLayoutCardContent"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:background="@color/whiterect"
                     android:orientation="vertical">
@@ -33,10 +34,9 @@
                         android:id="@+id/contenedor"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginVertical="50dp"
                         android:background="@color/whiterect"
                         android:orientation="vertical"
-                        android:padding="50dp">
+                        android:padding="8dp">
 
                         <ImageView
                             android:id="@+id/imageView"
@@ -59,13 +59,84 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="Nombre de usuario"
+                                android:hint="Nombre del administrador"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textSize="20dp" />
 
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="350dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:hint=""
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textSize="20dp" />
+
+
                         </LinearLayout>
 
+
+
+                            <LinearLayout
+                                android:id="@+id/contenedor4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/contenedor3"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/whiterect"
+                                    android:gravity="bottom"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">>
+
+                                    <Button
+                                        android:id="@+id/btnacerde"
+                                        style="?attr/materialButtonOutlinedStyle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:text="Acerca de"
+                                        android:textColor="@color/morado"
+                                        android:textSize="14dp"
+                                        app:cornerRadius="24dp"
+                                        app:strokeColor="@color/morado" />
+
+                                    <Button
+                                        android:id="@+id/btnpripoli"
+                                        style="?attr/materialButtonOutlinedStyle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:text="Privacidad y políticas"
+                                        android:textColor="@color/morado"
+                                        android:textSize="14dp"
+                                        app:cornerRadius="24dp"
+                                        app:strokeColor="@color/morado" />
+
+                                    <Button
+                                        android:id="@+id/btncerrarsesion"
+                                        style="?attr/materialButtonOutlinedStyle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:text="Cerrar sesión"
+                                        android:textColor="@color/morado"
+                                        android:textSize="14dp"
+                                        app:cornerRadius="24dp"
+                                        app:strokeColor="@color/morado" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
                     </LinearLayout>
+
 
                 </RelativeLayout>
 
@@ -74,52 +145,5 @@
 
     </ScrollView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginBottom="2dp"
-        android:background="@color/whiterect"
-        android:gravity="bottom"
-        android:orientation="vertical"
-        android:padding="5dp">
-
-        <Button
-            android:id="@+id/btnacerde"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:text="Acerca de"
-            android:textColor="@color/morado"
-            android:textSize="14dp"
-            app:cornerRadius="24dp"
-            app:strokeColor="@color/morado" />
-
-        <Button
-            android:id="@+id/btnpripoli"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:text="Privacidad y políticas"
-            android:textColor="@color/morado"
-            android:textSize="14dp"
-            app:cornerRadius="24dp"
-            app:strokeColor="@color/morado" />
-
-        <Button
-            android:id="@+id/btncerrarsesion"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:text="Cerrar sesión"
-            android:textColor="@color/morado"
-            android:textSize="14dp"
-            app:cornerRadius="24dp"
-            app:strokeColor="@color/morado" />
-    </LinearLayout>
 
 </RelativeLayout>
