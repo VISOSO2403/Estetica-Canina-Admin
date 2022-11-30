@@ -59,7 +59,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="Nombre de usuario"
+                                android:text="Admin Sandy estetica"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textSize="20dp" />
 
