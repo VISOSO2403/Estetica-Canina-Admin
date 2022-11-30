@@ -2,84 +2,83 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/fondo">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="10dp">
+        android:background="@drawable/esquinas_redondeadas"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:layout_marginVertical="15dp"
+        android:padding="3dp">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Servicio 1"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
 
             <TextView
-                android:id="@+id/nombre"
-                android:layout_width="match_parent"
+                android:id="@+id/descripcion"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Nombre"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="18dp" />
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:text="descripcion"
+                />
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:text=""
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="6dp">
 
-                <TextView
-                    android:id="@+id/descripcion"
+                <Button
+                    android:id="@+id/btneditar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="descripcion"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:id="@+id/precio"
+                    android:backgroundTint="@color/morado"
+                    app:cornerRadius="12dp"
+                    android:text="editar"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+                <Button
+                    android:id="@+id/btnborrar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="precio"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
-
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/morado"
+                    app:cornerRadius="12dp"
+                    android:text="borrar"
+                    android:textColor="@color/morado"
+                    android:textSize="12dp" />
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btneditar"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="50dp"
-                android:text="Editar"
-                android:textColor="@color/morado"
-                android:textSize="12dp"
-                app:cornerRadius="12dp"
-                app:strokeColor="@color/morado" />
-
-            <Button
-                android:id="@+id/btnborrar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/morado"
-                android:text="Borrar"
-                android:textColor="@color/white"
-                android:textSize="12dp"
-                app:cornerRadius="12dp" />
-
-        </LinearLayout>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
